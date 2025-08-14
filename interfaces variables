@@ -1,0 +1,32 @@
+//Interface variables
+interface constants{
+  int NO= 0;
+  int YES=1;
+  int MAYBE =2;
+  public int  clon_12();
+}
+class A implements constants{
+  public int clon_12(){
+    return 1;
+  }
+  int display(int x){
+    if (x<10){
+      return NO;
+    }
+    else if (x>15){
+      return YES;
+    }
+    else{
+      return MAYBE;
+    }
+    
+  }
+}
+class inheritance_demo {
+  public static void main(String[] args) {
+    A b=new A();
+    System.out.println(b.display(12));
+    
+  }
+  
+}
